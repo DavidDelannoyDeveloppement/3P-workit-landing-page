@@ -1,0 +1,985 @@
+/*Preliminary CSS*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-Parisienne :'Parisienne', cursive;
+    --Manrope :'Manrope', sans-serif;
+    --Fruances : 'Fraunces', serif;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*0- BODY + CONTAINER*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    height: 2494px;
+    /* background-color: #FCF8FF; */
+    overflow: hidden;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*1- TOP-SECTION*/
+
+.top-section{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24053E;
+    width: 100%;
+    height: 625px;
+}
+
+.top-section::before {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #24053E;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*11- HEADER: LOGO +  LINK*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 146px;
+}
+
+.logo img {
+    margin-left: 165.35px;
+    width: 95.76px;
+    height: 24.61px;
+}
+
+
+.apply {
+    margin-right: 165.35px;
+    font-family: var(--Manrope);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #FFFFFF;
+    border-bottom: solid 3px #44FAA1;
+}
+.apply:hover{
+    color: #44FAA1;
+   cursor: grab;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*12- BACKGROUND*/
+.pattern_1{
+    position: absolute;
+    width: 270.29px;
+    height: 215.01px;
+    left: -115px;
+    top: 116.12px;
+}
+
+.pattern_2 {
+    position: absolute;
+    width: 141.7px;
+    height: 112.71px;
+    left: 1350px;
+    top: 351.55px;
+}
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*13- TITLE + BUTTON + PHONE*/
+h1 {
+    width: 635px;
+    height: 160px;
+    font-family: var(--Fruances);
+    font-style:normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px; 
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 37px;
+}
+
+
+.learn {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    width: 161px;
+    height: 61px;
+    background-color: #44FAA1;
+    font-family: var(--Manrope);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #24053E;
+}
+.learn:hover {
+    color: #44FAA1;
+    background-color: #24053E;
+    border: solid 1px #44FAA1;
+}
+
+
+.phone {
+    position: absolute;
+    display: flex;
+    z-index: 50;
+    width: 767px;
+    height: 441px;
+    top: 454px;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*2- MIDDLE-SECTION*/
+
+.middle-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCF8FF;
+    width: 100%;
+    height: 734px;
+}
+
+.middle-section::before {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #FCF8FF;
+}
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*21- SET*/
+.set{
+    margin-top: 345px;
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+    width: 1114px;
+    height: 308px;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*211- STEP-ALL (STEP-NUM + STEP-STR)*/
+.step-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 354px;
+    height: 100%;
+}
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*2111- STEP-NUM*/
+.step-num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #584D62;
+    border-radius: 50%;
+    font-family: var(--Fruances);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #24053E;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*2112- STEP-STR*/
+.step-str{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 493px; */
+}
+
+
+.step-str h2 {
+    margin-top: 56px;
+    margin-bottom: 28px;
+    font-family: var(--Fruances);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #24053E;
+}
+
+
+.step-str p {
+    font-family: var(--Manrope);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #24053E;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*3- BOTTOM-SECTION*/
+
+.bottom-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 858px;
+    background-color: #FFFFFF;
+}
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*31- CONTAINER-BOTTOM*/
+.container-bottom {
+    position: relative;
+    display: flex;
+    width: 1112px;
+    height: 648px;
+    margin-top: 210px;
+}
+
+.container-bottom img {
+    display: flex;
+    z-index: 0;
+    width: 477px;
+    height: 477px;
+}
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*311- CARD*/
+.card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 173px;
+    z-index: 1;
+    width: 730px;
+    height: 413px;
+    background-color: #24053E;
+}
+
+h3 {
+    font-family: var(--Fruances);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin-top: 64px;
+    margin-left: 64.5px;
+}
+
+.card p {
+    margin-top: 32px;
+    margin-left: 64px;
+    font-family: var(--Manrope);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    width: 602px;
+    height: 96px;
+}
+
+.card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 61px;
+    margin-top: 32px;
+    margin-left: 64px;
+    background-color: #44FAA1;
+    font-family: var(--Manrope);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #24053E;
+}
+
+.card-link:hover {
+    color: #44FAA1;
+    background-color: #24053E;
+    border: solid 1px #44FAA1;
+}
+
+.card img {
+    position: absolute;
+    width: 273px;
+    height: 210px;
+    right: 72px;
+    bottom: -62px;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*4- MAIN-FOOTER*/
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 116px;
+    height: 102px;
+    margin-top: 60px;
+}
+
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+}
+
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*Footer*/
+.attribution { 
+    font-size: 14px; text-align: center;
+}
+
+.attribution c,a {
+    text-decoration: none; 
+}
+
+.ddd {
+    font-size: 16px; 
+    color: rgb(255, 120, 0);
+    font-family: 'Monotype Corsiva', var(--font-Parisienne);
+}
+
+
+
+
+
+
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/* RESPONSIVE DESIGN 1360PX*/
+@media only screen and (max-width: 1360px) {
+    /*§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§*/
+    /*0- BODY + CONTAINER*/
+
+    .container {
+        width: 768px;
+        height: 2254px;
+    }
+
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§*/
+    /*1- TOP-SECTION*/
+    .top-section{
+        width: 100%;
+        height: 493px;
+    }
+    
+    .top-section::before {
+        bottom: -100px;
+        height: 200px;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*11- HEADER: LOGO +  LINK*/
+    .logo {
+        align-items: start;
+        padding-top: 32px;
+        height: 122px;
+    }
+
+    .logo img {
+        margin-left: 39px;
+    }
+
+
+    .apply {
+        margin-right: 40px;
+        font-size: 16px;
+        letter-spacing: -0.16px;
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*12- BACKGROUND*/
+    .pattern_1{
+        left: -175px;
+    }
+
+    .pattern_2 {
+        left: 700px;
+        top: 251.55px;
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*13- TITLE + BUTTON + PHONE*/
+
+    h1 {
+        width: 573px;
+        height: 121px;
+        font-size: 60px;
+        line-height: 60px; 
+        margin-bottom: 39px;
+    }
+
+    .learn {
+        width: 133px;
+        height: 55px;
+        font-size: 16px;
+        letter-spacing: -0.16px;
+    }
+
+
+    .phone {
+        width: 514px;
+        height: 296px;
+        top: 392px;
+    }
+
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§*/
+    /*2- MIDDLE-SECTION*/
+    .middle-section{
+        height: 800px;
+    }
+    
+    .middle-section::before {
+        bottom: -100px;
+        height: 200px;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*21- SET*/
+    .set{
+    flex-direction: column;
+    margin-top: 240px;
+    justify-content: space-between;
+    width: 573px;
+    height: 530px;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*211- STEP-ALL (STEP-NUM + STEP-STR)*/
+    .step-all{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*2111- STEP-NUM*/
+    .step-num{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 48px;
+        height: 46px;
+        margin-right: 32px;
+        margin-top: 8%;
+    }
+
+
+
+    .number {
+        justify-content: center;
+        align-items: center;
+        /* width: 48px;
+        height: 46px; */
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*2112- STEP-STR*/
+    .step-str{
+        align-items: start;
+        width: 470px;
+    }
+
+
+    .step-str h2 {
+        margin-top: 0px;
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: left;
+    }
+
+
+    .step-str p {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+    }
+
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§*/
+    /*3- BOTTOM-SECTION*/
+
+    .bottom-section{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 858px;
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*31- CONTAINER-BOTTOM*/
+    .container-bottom {
+        width: 689px;
+        height: 526px;
+        margin-top: 210px;
+    }
+
+    .container-bottom img {
+        width: 281px;
+        height: 281px;
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*311- CARD*/
+    .card {
+        flex-direction: column;
+        right: 0;
+        top: 173px;
+        width: 514px;
+        height: 375px;
+    }
+
+    h3 {
+        font-size: 36px;
+        line-height: 40px;
+        margin-top: 48px;
+        margin-left: 56.5px;
+    }
+
+    .card p {
+        margin-top: 32px;
+        margin-left: 64px;
+        font-size: 16px;
+        line-height: 28px;
+        width: 402px;
+        height: 112px;
+    }
+
+    .card-link {
+        width: 172px;
+        height: 55px;
+        margin-top: 32px;
+        margin-left: 64px;
+        font-size: 16px;
+        letter-spacing: -0.16px;
+    }
+
+    .card img {
+        width: 173px;
+        height: 137px;
+        right: 0;
+        bottom: -62px;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§*/
+    /*4- MAIN-FOOTER*/
+    .main-footer {
+        width: 116px;
+        height: 102px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+
+    .social {
+        width: 100%;
+        height: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§*/
+/* RESPONSIVE DESIGN 760PX*/
+@media only screen and (max-width: 760px) {
+    /*§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§*/
+    /*0- BODY + CONTAINER*/
+
+    .container {
+        width: 375.3px;
+        height: 2406px; /*§§§§§§§§§§§§§§§§*/
+    }
+
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§*/
+    /*1- TOP-SECTION*/
+    .top-section{
+        width: 100%;
+        height: 480px; /*§§§§§§§§§§§§§§§§*/
+    }
+    
+    .top-section::before {
+        bottom: -40px;
+        height: 85px;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*11- HEADER: LOGO +  LINK*/
+    .logo {
+        align-items: start;
+        padding-top: 37px;
+        height: 122px;
+    }
+
+    .logo img {
+        margin-left: 16px;
+    }
+
+
+    .apply {
+        margin-right: 16px;
+        font-size: 16px;
+        letter-spacing: -0.16px;
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*12- BACKGROUND*/
+    .pattern_1{
+        left: -300px;
+    }
+
+    .pattern_2 {
+        left: 700px;
+        top: 251.55px;
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*13- TITLE + BUTTON + PHONE*/
+
+    h1 {
+        width: 343px;
+        height: 100px;
+        font-size: 44px;
+        line-height: 50px; 
+    }
+
+    .learn {
+        font-size: 16px;
+        letter-spacing: -0.16px;
+    }
+
+
+    .phone {
+        width: 320px;
+        height: 184px;
+        top: 380px;
+    }
+
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§*/
+    /*2- MIDDLE-SECTION*/
+    .middle-section{
+        height: 1100px;  /*§§§§§§§§§§§§§§§§*/
+    }
+    
+    .middle-section::before {
+        bottom: -40px;
+        height: 85px;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*21- SET*/
+    .set{
+    flex-direction: column;
+    margin-top: 150px;
+    justify-content: space-between;
+    width: 375.3px;
+    height: 860px;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*211- STEP-ALL (STEP-NUM + STEP-STR)*/
+    .step-all{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*2111- STEP-NUM*/
+    .step-num{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 48px;
+        height: 46px;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+
+
+    .number {
+        justify-content: center;
+        align-items: center;
+        /* width: 48px;
+        height: 46px; */
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*2112- STEP-STR*/
+    .step-str{
+        align-items: center;
+        width: 343px;
+    }
+
+
+    .step-str h2 {
+        margin-top: 24px;
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+
+    .step-str p {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§*/
+    /*3- BOTTOM-SECTION*/
+
+    .bottom-section{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 858px;
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*31- CONTAINER-BOTTOM*/
+    .container-bottom {
+        width: 343px;
+        height: 526px;
+        margin-top: 110px;
+        justify-content: center;
+    }
+
+    .container-bottom img {
+        width: 281px;
+        height: 281px;
+    }
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*311- CARD*/
+    .card {
+        flex-direction: column;
+        right: 0;
+        top: 228px;
+        width: 343px;
+        height: 375px;
+    }
+
+    h3 {
+        font-size: 32px;
+        line-height: 48px;
+        margin-top: 32px;
+        margin-left: 31.5px;
+    }
+
+    .card p {
+        margin-top: 16px;
+        margin-left: 31px;
+        width: 281px;
+        height: 168px;
+        text-align: center;
+    }
+
+    .card-link {
+        margin-top: 24px;
+        margin-left: 86px;
+    }
+
+    .card img {
+        width: 0;
+        height: 0;
+        right: 0;
+        bottom: -62px;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§*/
+    /*4- MAIN-FOOTER*/
+    .main-footer {
+        width: 116px;
+        height: 102px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+
+    .social {
+        width: 100%;
+        height: 20px;
+    }
+
+}
